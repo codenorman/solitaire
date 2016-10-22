@@ -21,5 +21,8 @@
   "homepage": "https://github.com/codenorman/solitaire#readme",
   "dependencies": {
     "lodash": "^4.16.4"
+  },
+  "devDependencies": {
+    "jasmine": "^2.5.2"
   }
 }
