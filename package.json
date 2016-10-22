@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/codenorman/solitaire/issues"
   },
-  "homepage": "https://github.com/codenorman/solitaire#readme"
+  "homepage": "https://github.com/codenorman/solitaire#readme",
+  "dependencies": {
+    "lodash": "4.16.4"
+  }
 }
