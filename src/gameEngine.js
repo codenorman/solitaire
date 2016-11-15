@@ -29,5 +29,5 @@ var isGameWon = function (boardState) {
 
 };
 
-var deck = genDeck(config.pack)
-console.log(deck);
+//var deck = genDeck(config.pack)
+//console.log(deck);

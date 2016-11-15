@@ -5,12 +5,19 @@ module.exports = {
   isRed: function (card) {
     return !isBlack(card);
   },
-  isHeart: function () {
+  isHeart: function (card) {
+    return card[1] === 'h';
   },
-  isSpade: function () {
+  isSpade: function (card) {
+   return card[1] === 's';
   },
-  isClub: function () {
+  isClub: function (card) {
+    return card[1] === 'c';
   },
-  isDiamond: function () {
+  isDiamond: function (card) {
+    return card[1] === 'd';
   },
+ // isFace: function (card){
+ //  return card[0] === 'j' || card[0] === 'q' || card[0] === 'k' || card[0] === 'a';
+  }
 }
