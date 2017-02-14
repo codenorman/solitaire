@@ -1,4 +1,5 @@
 var _ = require('lodash');
+var config = require('./games/klondike.json');
 
 // shuffle
 // isValidMove
@@ -20,6 +21,39 @@ module.exports = {
   },
   isRed: function(card){
     return !this.isBlack(card)
+  },
+  isHeart: function (card) {
+    return card[1] === 'h';
+  },
+  isSpade: function (card) {
+    return card[1] === 's';
+  },
+  isClub: function (card) {
+    return card[1] === 'c';
+  },
+  isDiamond: function (card) {
+    return card[1] === 'd';
+  },
+  isFace: function (card){
+    return card[0] === 'j' || card[0] === 'q' || card[0] === 'k' || card[0] === 'a';
   }
 };
 
+var setUp = function(){
+
+};
+
+var start = function(){
+
+};
+
+var isValidMove = function (currentState, newState) {
+
+};
+
+var isGameWon = function (boardState) {
+
+};
+
+//var deck = genDeck(config.pack)
+//console.log(deck);

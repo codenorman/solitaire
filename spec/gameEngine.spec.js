@@ -1,36 +1,40 @@
 var ge = require('../src/gameEngine');
 
-describe('gen Deck', function(){
+describe('gen Deck', function () {
 
-  it('should generate A cards',function(){
-    expect(ge.genDeck(["a","cdhs"])).toEqual(['ac','ad','ah','as']);
+  it('should generate A of Diamonds', function () {
+    expect(ge.genDeck(['a', 'd'])).toEqual(['ad']);
   });
 
-  it('should generate a deck of A and 2',function(){
-    expect(ge.genDeck(["a2","cdhs"])).toEqual(['ac','ad','ah','as','2c','2d','2h','2s']);
+  it('should generate A cards', function () {
+    expect(ge.genDeck(["a", "cdhs"])).toEqual(['ac', 'ad', 'ah', 'as']);
   });
 
-  describe('A spades', function() {
-    it('should be black', function () {
-      expect(ge.isBlack('as')).toEqual(true);
-    })
-  })
+  it('should generate a deck of A and 2', function () {
+    expect(ge.genDeck(["a2", "cdhs"])).toEqual(['ac', 'ad', 'ah', 'as', '2c', '2d', '2h', '2s']);
+  });
+});
 
-  describe('A clubs', function() {
-    it('should be black', function () {
-      expect(ge.isBlack('ac')).toEqual(true);
-    })
+describe('A spades', function () {
+  it('should be black', function () {
+    expect(ge.isBlack('as')).toEqual(true);
   })
+})
 
-  describe('A diamonds', function() {
-    it('should be red', function () {
-      expect(ge.isRed('ad')).toEqual(true);
-    })
+describe('A clubs', function () {
+  it('should be black', function () {
+    expect(ge.isBlack('ac')).toEqual(true);
   })
+})
 
-  describe('A heart', function() {
-    it('should be red', function () {
-      expect(ge.isRed('ah')).toEqual(true);
-    })
+describe('A diamonds', function () {
+  it('should be red', function () {
+    expect(ge.isRed('ad')).toEqual(true);
+  })
+})
+
+describe('A heart', function () {
+  it('should be red', function () {
+    expect(ge.isRed('ah')).toEqual(true);
   })
 });
