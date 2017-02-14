@@ -9,5 +9,5 @@
     {"tableau": "color alternating descending"},
     {"empty": "k"}
   ],
-  "goal": "A-K by suite"
+  "goal": "A-K by suit"
 }
